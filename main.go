@@ -113,7 +113,7 @@ func do(w http.ResponseWriter, r *http.Request) {
 <p>總排名: %d<br />
 %s排名: %d</p>
 <h1>各職業前 20 名</h1>
-`, id, userTotal.Level, userTotal.Exp, userTotal.Rank, clsMap[userTotal.Class], userClass)
+`, id, userTotal.Rank, clsMap[userTotal.Class], userClass)
 
 	for cls, ladders := range data {
 		ret += `<div style="float:left;margin:20px;border:1px solid black;padding:5px"><h3>` + clsMap[cls] + `</h3><table border="0" cellspacing="0" cellpadding="5">` + "\n"
